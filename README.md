@@ -1,41 +1,22 @@
-# Fatura SaaS — Financial Analysis & Monte Carlo Simulation
+# Fatura SaaS — Business Analysis Portfolio
 
-## Contexte métier
-Fatura est une startup SaaS de facturation tunisienne (contexte Startup Act 2018).
-Ce projet analyse la robustesse financière du modèle via une simulation Monte Carlo
-en faisant varier les deux hypothèses les plus incertaines : le churn et la croissance.
+> Analyse financière et data science d'une startup SaaS 
+> tunisienne dans le contexte Startup Act 2018.
 
-## Problème métier
-> "Si le churn et la croissance dévient de nos hypothèses de base,
-> est-ce que Fatura survit financièrement ?"
+## Projets
 
-## Outils utilisés
-- Python (numpy, pandas, matplotlib)
-- Excel (modèle financier 12 mois, 395 formules)
-- Google Colab
+| Projet | Question métier | Outils | Résultat clé |
+|---|---|---|---|
+| [Monte Carlo](./monte_carlo) | Fatura survit-elle si les hypothèses dévient ? | Python, Excel | Survit dans 100% des scénarios |
+| [Churn Prediction](./churn_prediction) | Quels clients vont churner ? | Python, ML | NPS + ARPU = signaux les plus forts |
 
-## Résultats clés
-| Scénario | MRR Mois 12 |
-|---|---|
-| Pessimiste (10% des cas) | 75 339 TND |
-| Probable (50% des cas) | 178 527 TND |
-| Optimiste (90% des cas) | 280 509 TND |
-| Base Fatura | 197 716 TND |
+## Stack technique
+Python · Excel · scikit-learn · pandas · matplotlib · Google Colab
 
-**Conclusion : Fatura survit dans 100% des scénarios simulés.**
-Le MRR minimum (75 339 TND) reste au-dessus du seuil de breakeven (32 500 TND).
+## Contexte marché
+Startup SaaS B2B tunisienne · Benchmarks Flat6Labs · 
+Startup Act 2018 · BCT
 
-## Structure du projet
-```
-├── fatura_monte_carlo.ipynb        # Notebook Python complet
-├── Fatura_SaaS_Financial_Model.xlsx  # Modèle Excel
-└── README.md
-```
-## Hypothèses Monte Carlo
-- Churn : entre 2% et 8% (benchmark SaaS B2B tunisien — Flat6Labs)
-- Croissance MoM : entre 6% et 18% (benchmark MENA early-stage)
-- Nombre de simulations : 1 000
-
-## Leçon clé
-Le Monte Carlo ne prédit pas l'avenir.
-Il mesure la robustesse d'un modèle face à l'incertitude.
+## Auteur
+**Lynda** · Master Business Analysis · Tunisie
+[LinkedIn](#) · [Email](#)
